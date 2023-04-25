@@ -25,7 +25,7 @@ int _printf(const char *form, ...)
 		if (form[i] != '%')
 		{
 			buffer[buffer_ind++] = form[i];
-			if (buffer_ind == buffer_size)
+			if (buffer_ind == BUFFER_SIZE)
 				print_buffer(buffer, &buffer_ind);
 			/* write(1, &form[i], 1);*/
 			printed_chars++;

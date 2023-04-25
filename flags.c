@@ -18,7 +18,7 @@ int get_flags(const char *form, int *i)
 	{
 		if (form[curr_i] == FLAGS_CH[j])
 		{
-			flags |= FLAGS_ARR[J];
+			flags |= FLAGS_ARR[j];
 			break;
 		}
 	if (FLAGS_CH[j] == 0)
