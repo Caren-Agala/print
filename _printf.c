@@ -13,7 +13,7 @@ int _printf(const char *form, ...)
 	int i, printed = 0, printed_chars = 0;
 	int flags, width, precision, size, buffer_ind = 0;
 	va_list list;
-	char buffer[buffer_size];
+	char buffer[BUFFER_SIZE];
 
 	if (form == NULL)
 		return (-1);
